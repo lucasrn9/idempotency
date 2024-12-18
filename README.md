@@ -3,8 +3,8 @@ Disclaimer: The code in this repository, in its current state, should NEVER be u
 
 You can use the examples individually; however, they are designed to complement each other.
 
-cd client
-yarn
-cd api
-yarn
+cd client  
+yarn  
+cd api  
+yarn  
 node app.js
