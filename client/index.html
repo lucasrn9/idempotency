@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Idempotency</title>
+    </head>
+    <body>
+        <div>
+            <h2>Not idempotent</h2>
+            <form id="notIdempotentForm">
+                <select name="order" id="order">
+                    <option value="burger">burger</option>
+                </select>
+                <button type="submit">order now</button>
+                <button type="button" id="orderWithErrorNotIdempotentBtn">
+                    order with error
+                </button>
+            </form>
+            <p id="statusNotIdempotent">status</p>
+        </div>
+        <div>
+            <h2>Idempotent</h2>
+            <form id="idempotentForm">
+                <select name="order" id="order">
+                    <option value="burger">burger</option>
+                </select>
+                <button type="submit">order now</button>
+                <button type="button" id="orderWithErrorIdempotentBtn">
+                    order with error
+                </button>
+            </form>
+            <p id="statusIdempotent">status</p>
+        </div>
+    </body>
+    <script type="module" src="./index.js"></script>
+</html>
